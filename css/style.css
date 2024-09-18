@@ -4,7 +4,7 @@
     --text: #d5e8dd;
     --background: #141924;
     --primary: #a1ceb0;
-    --darker: #577260;
+    --darker: #76937f;
     --secondary: #384e6a;
     --accent: #7473b5;    
 }
@@ -26,7 +26,7 @@ nav{
     padding: 1% 0;
     position: sticky;
     top: 0;
-    background: rgba(116, 115, 181, .5);
+    background: rgba(116, 115, 181, .3);
     backdrop-filter: blur(10px);
 }
 nav ul{
@@ -42,24 +42,20 @@ nav ul li a{
     font-size: 1.2em;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 nav ul li a:hover{
     color: var(--primary);
     text-decoration: underline;
     font-size: 1.3em;
     letter-spacing: 1px;
-    transition: all 0.5s;
+    transition: all 1s;
 }
-a i{
+nav a i{
     font-size: 1.2em;
 }
 
-img{
-    width: 30em;
-    display: block;
-    margin: auto;
-}
+
 header{
     display: flex;
     align-items: center;
@@ -73,8 +69,23 @@ header h1{
     color: var(--primary);
     font-size: 3em;
 }
-header h5{
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--darker); }
+}
+header h4{
+    color: var(--darker);
+    overflow: hidden; 
+    border-right: 2px solid var(--accent); 
+    white-space: nowrap; 
     margin: 3% 0;
+    animation: 
+      typing 3.5s steps(40, end) infinite alternate-reverse,
+      blink-caret .75s step-end infinite;
 }
 header a{
     width: fit-content;
@@ -89,7 +100,7 @@ header a{
 }
 header a:hover{
     color: var(--primary);
-    border-radius: 20px;
+    border-radius: 15px;
     transition: all 1s;
 }
 
@@ -110,4 +121,63 @@ header a:hover{
 }
 #sobremi p{
     color: var(--background);
+}
+
+#proyectos{
+    margin: 15% 0;
+}
+#proyectos header h2{
+    font-size: 3em;
+    padding-bottom: 5%;
+}
+#p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#proyectos article{
+    background-color: var(--accent);
+    padding: 12% 8%;
+}
+
+#contacto{
+    background-color: var(--secondary);
+    padding: 10%;
+}
+#contacto h2{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+form{
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--text);
+}
+form input{
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: var(--text);
+    color: var(--secondary);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+form button{
+    width: fit-content;
+    padding: 2%;
+    border-radius: 15px;
+    background-color: var(--accent);
+    font-size: 1.2em;
+    transition: all 1s;
+}
+form button:hover{
+    color: var(--primary);
+    border-radius: 20px;
+    transition: all 1s;
 }

@@ -32,7 +32,7 @@
                 <a href="" download>DESCARGAR CV</a>
             </section>
             <section>
-                
+
             </section>
         </header>
 
@@ -43,28 +43,55 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod labore ipsum architecto atque, neque, tenetur tempora aliquid hic laborum voluptates molestias delectus molestiae blanditiis ab placeat repudiandae harum soluta dignissimos?
                     </p>
                 </article>
+
                 <article>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus placeat perferendis amet laborum distinctio earum, qui quibusdam dignissimos dolorum esse soluta sint, veniam deleniti in fugiat pariatur consequatur neque iste.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus placeat perferendis amet laborum distinctio earum, qui quibusdam dignissimos dolorum esse soluta sint, veniam deleniti in fugiat pariatur consequatur neque iste.
+                    </p>
                 </article>
             </section>
 
             <section id="proyectos">
-                <article>
-                    <h3>Proyecto1</h3>
-                </article>
-                <article>
-                    <h3>Proyecto2</h3>
-                </article>
+                <header>
+                    <h2>PROYECTOS</h2>
+                </header>
+
+                <section id="p">
+                    <article>
+                        <h3>Proyecto1</h3>
+                        <img src="" alt="p1">
+                        <p></p>
+                    </article>
+                    <article>
+                        <h3>Proyecto2</h3>
+                        <img src="" alt="p2">
+                        <p></p>
+                    </article>
+                    <article>
+                        <h3>Proyecto3</h3>
+                        <img src="" alt="p3">
+                        <p></p>
+                    </article>
+                </section>
             </section>
 
             <section id="contacto">
-                <form post="">
+                <h2>CONTÁCTAME!</h2>
+                <form method="post">
+                    <label for="nombre">Nombre completo: </label>
+                    <input type="text" id="nombre" name="nombre">
 
+                    <label for="asunto">Asunto: </label>
+                    <input type="text" id="asunto" name="asunto">
+
+                    <label for="mensaje">Mensaje: </label>
+                    <input type="text" id="mensaje" name="mensaje">
+
+                    <button onclick="enviar()">Enviar</button>
                 </form>
             </section>
         </main>
 
-
-        <script type="module" src="./js/prueba.js"></script>
+        <script src="./js/sendemail.js"></script>
     </body>
 </html>
