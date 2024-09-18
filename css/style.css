@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Fira%20Sans%20Extra%20Condensed:700|Fira%20Sans%20Extra%20Condensed:400');
+
+:root{
+    --text: #d5e8dd;
+    --background: #141924;
+    --primary: #a1ceb0;
+    --darker: #577260;
+    --secondary: #384e6a;
+    --accent: #7473b5;    
+}
+*{
+    vertical-align: top;
+    box-sizing: border-box;
+    color: var(--text);
+
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--background);
+    font-family: 'Fira Sans Extra Condensed';
+    font-weight: 400;
+}
+
+nav{
+    padding: 1% 0;
+    position: sticky;
+    top: 0;
+    background: rgba(116, 115, 181, .5);
+    backdrop-filter: blur(10px);
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2%;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0 3%;
+}
+nav ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+nav ul li a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+a i{
+    font-size: 1.2em;
+}
+
+img{
+    width: 30em;
+    display: block;
+    margin: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section{
+    width: 50%;
+    padding: 10% 5%;
+}
+header h1{
+    color: var(--primary);
+    font-size: 3em;
+}
+header h5{
+    margin: 3% 0;
+}
+header a{
+    width: fit-content;
+    float: right;
+    padding: 2%;
+    margin: 2% 0;
+
+    background-color: var(--secondary);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 1s;
+}
+header a:hover{
+    color: var(--primary);
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+
+#sobremi{
+    background: linear-gradient(var(--background) 50%, var(--primary) 50%);
+    padding: 10% 0;
+
+    display: flex;
+    justify-content: center;
+}
+#sobremi article{
+    width: 20%;
+    margin: 0 5%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: var(--text);
+}
+#sobremi p{
+    color: var(--background);
+}
