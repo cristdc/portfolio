@@ -11,7 +11,7 @@
     </head>
     <body>
 
-        <nav id="home">
+        <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#sobremi">SOBRE MÍ</a></li>
@@ -21,15 +21,17 @@
             </ul>
         </nav>
 
-        <header>
+        <header id="home">
             <section>
                 <h1>CRISTINA DÍAZ CABELLO</h1>
                 <h4>DESARROLLO APLICACIONES MULTIPLATAFORMA</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem porro incidunt numquam illum exercitationem repudiandae, odit id nam minima dolorum saepe dolor nihil totam earum dolores ab vitae beatae?
+                    Soy estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) 
+                    con conocimientos en Desarrollo de Aplicaciones Web (DAW). 
+                    Me especializo en crear soluciones tanto para móviles como para la web, con enfoque en la mejora continua y el desarrollo de proyectos innovadores.  
                     <i class="fa-solid fa-face-smile-wink"></i>
                 </p>
-                <a href="" download>DESCARGAR CV</a>
+                <a href="./img/curriculum CRISTINA DIAZ CABELLO.pdf" download>DESCARGAR CV</a>
             </section>
             <section>
 
@@ -38,18 +40,24 @@
 
         <main>
             <section id="sobremi">
-                <article>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod labore ipsum architecto atque, neque, tenetur tempora aliquid hic laborum voluptates molestias delectus molestiae blanditiis ab placeat repudiandae harum soluta dignissimos?
-                    </p>
-                </article>
-
-                <article>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus placeat perferendis amet laborum distinctio earum, qui quibusdam dignissimos dolorum esse soluta sint, veniam deleniti in fugiat pariatur consequatur neque iste.
-                    </p>
-                </article>
+                <header>
+                    <h2>SOBRE MÍ</h2>
+                </header>
+                <section id="sobremi2">
+                    <article>
+                        <p>
+                            Me encanta enfrentar nuevos desafíos y nunca me rindo hasta encontrar una solución. Me considero bastante curiosa, y cuando algo me llama la atención, investigo por mi cuenta hasta entenderlo por completo. En clase, siempre busco ayudar a mis compañeros cuando puedo.
+                        </p>
+                    </article>
+    
+                    <article>
+                        <p>
+                            Disfruto del trabajo en equipo y me motiva ver cómo cada proyecto que hago me acerca más a mis metas. Soy de las que piensan que no hay límites cuando tienes ganas de aprender, y siempre estoy buscando nuevas maneras de mejorar y crecer como desarrolladora.
+                        </p>
+                    </article>
+                </section>
             </section>
+            
 
             <section id="proyectos">
                 <header>
@@ -77,20 +85,29 @@
 
             <section id="contacto">
                 <h2>CONTÁCTAME!</h2>
-                <form method="post">
+                <form>
                     <label for="nombre">Nombre completo: </label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" required>
 
                     <label for="asunto">Asunto: </label>
-                    <input type="text" id="asunto" name="asunto">
+                    <input type="text" id="asunto" name="asunto" required>
 
                     <label for="mensaje">Mensaje: </label>
-                    <input type="text" id="mensaje" name="mensaje">
+                    <input type="text" id="mensaje" name="mensaje" required>
 
-                    <button onclick="enviar()">Enviar</button>
+                    <button type="button" onclick="enviar()" value="Enviar">Enviar</button>
                 </form>
             </section>
         </main>
+
+        <footer>
+            <article>
+                <a href="https://github.com/cristdc" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://cults3d.com/@ch3se" target="_blank"><i class="fa-solid fa-cube"></i></a>    
+            </article>
+            
+            <h6>Derechos reservados</h6>
+        </footer>
 
         <script src="./js/sendemail.js"></script>
     </body>
